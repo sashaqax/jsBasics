@@ -32,8 +32,8 @@ function analyzeGrades(grades) {
     const sum = grades.reduce((acc, grade) => acc + grade, 0);
     const average = sum / grades.length;
 
-    if (average < 3) return "Failed";
-    if (average <= 4) return "Passed";
+    if (average < 3) {return "Failed";}
+    if (average <= 4) {return "Passed";}
     return "Excellent";
 }
 
@@ -120,8 +120,8 @@ function calculate(operations) {
     let result = 0;
 
     for (const { operation, value } of operations) {
-        if (operation === "+") result += value;
-        if (operation === "-") result -= value;
+        if (operation === "+") {result += value;}
+        if (operation === "-") {result -= value;}
     }
 
     return result;

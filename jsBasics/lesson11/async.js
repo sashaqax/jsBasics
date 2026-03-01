@@ -35,11 +35,11 @@ const differedPromise = new Promise((resolve) => {
 differedPromise.then(result => console.log(result));
 
 console.log('Operation 3: ');
-let result4 = 511 + 5;
+const result4 = 511 + 5;
 console.log(`Result 4:${result4}`);
 
 console.log('Operation 4: ');
-let result5 = 5111 + 5;
+const result5 = 5111 + 5;
 console.log(`Result 5:${result5}`);
 
 console.log 
